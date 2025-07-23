@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>دكتور احمد سعيد</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      direction: rtl;
+    }
+
+    header {
+      background-color: #4285f4;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      background-color: white;
+      color: #4285f4;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .doctor-section {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .doctor-section img {
+      width: 150px;
+      height: 150px;
+      background-color: #eee;
+      display: block;
+      object-fit: cover;
+      border-radius: 50%; 
+      border: 2px solid #ccc;
+    }
+
+    .doctor-details h2 {
+      margin-top: 0;
+    }
+     .stars {
+      color: orange;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .certificates p {
+      margin: 5px 0;
+    }
+
+    .textbox {
+      padding: 10px;
+      margin: 10px 0;
+      height: 80px;
+    }
+
+    .Squar-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+    }
+
+    .squar {
+      width: 90px;
+      height: 90px;
+      border: 1px solid #000;
+      border-radius: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    
+     .booking-times {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 15px;
+      width: 100px;
+      text-align: center;
+    }
+    .card h4 {
+      background-color: blue;
+      color: #ffffff;
+      margin: 5px 0;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .card button {
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .note {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 18px;
+      color: gray;
+    }
+    
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      padding: 10px 30px;
+      font-size: 16px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+  background: linear-gradient(to left, #0b92e1, #1b7dc3);
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column h3 span {
+  color: rgb(255, 0, 0);
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #ffffff55;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-buttons img {
+  height: 50px;
+  margin: 5px 10px 5px 0;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.social-icons a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #060607;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-container, .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 25px;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Vezeeta</div>
+    <nav>
+      <a href="#">عرض التخصصات</a>
+      <a href="#">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="doctor-section">
+       <img src="C:\Users\Fix-Dell\Pictures\Screenshot 2025-07-22 201156.jpg" alt="صورة الدكتور" />
+      <div class="doctor-details">
+        <h2>دكتور احمد سعيد</h2>
+        <p><strong>استشاري طب وجراحة الفم والأسنان</strong></p>
+        <div class="certificates">
+          <p>شهادات:</p>
+          <p>زمالة كلية الجراحين الملكية (MFDS) – بريطانيا</p>
+          <p>شهادة البورد الأمريكي في طب الأسنان (NBDE) – أمريكا</p>
+          <p>شهادة الجراحات البسيطة للفم والأسنان (Minor Oral Surgery)</p>
+           <p>دبلومة الجراحة المتقدمة للفم والأسنان</p>
+           <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div>
+      <p><strong>معلومات عن الدكتور:</strong></p>
+      <div class="textbox">
+        <p>
+          دكتور اسنان متخصص في اسنان اطفال، تجميل اسنان، حشو وعلاج الجذور والاعصاب،  علاج اللثة، جراحة وجه وفكين، تقويم اسنان، تركيبات اسنان، اسنان مسنين، اشعة الاسنان، زراعة اسنان و اسنان بالغين
+      </p>
+    </div>
+    </div>
+
+    <div>
+      <p><strong>الأعراض والخدمات:</strong></p>
+      <div class="textbox">
+        <p>
+          الكشف الشامل على الفم والأسنان
+فحص دوري للكشف عن التسوس، مشاكل اللثة، وتنظيف الأسنان.
+
+حشوات الأسنان التجميلية والعلاجية
+باستخدام أحدث المواد للحصول على أفضل نتيجة وظيفية وجمالية.
+
+تبييض الأسنان
+بتقنيات آمنة وسريعة مثل Zoom أو الليزر.
+        </p>
+        <p>
+          العروض الحالية: خصم 20% على أول زيارة للكشف والتشخيص
+        </p>
+      </div>
+     <div class="Squar-container">
+      <div class="squar">سعر الكشف:<br>300 جنيه</div>
+      <div class="squar">مدة الانتظار:<br>15 دقيقة</div>
+    </div>
+  </div>
+  
+    <h2>اختر معاد حجزك</h2>
+    <div class = "booking-times">
+          <div class="card">
+        <h4>السبت</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>
+    <div class="card">
+        <h4>الاحد</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>
+    <div class="card">
+        <h4>الاثنين</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>
+    <div class="card">
+        <h4>الثلاثاء</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>   
+    <div class="card">
+        <h4>الاربعاء</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>   
+    <div class="card">
+        <h4>الخميس</h4>
+        <p>من 6:00 م</p>
+        <p>إلى 9:00 م</p>
+        <button>احجز</button>
+    </div>   
+  </div>
+  
+  <div class="note">الدخول مسبقا والدخول باسبقية الحضور</div>
+    <div class="button-container">
+      <button>احجز الآن</button>
+    </div>
+    </div>
+    
+  <footer>
+            <div class="footer-container">
+            <div class="footer-column">
+                <h3>Vezeeta<span>.com</span></h3>
+                <a href="#">من نحن</a><br>
+                <a href="#">فريق فيزيتا</a><br>
+                <a href="#">وظائف</a><br>
+                <a href="#">صفحافة</a>
+            </div>
+            <div class="footer-column">
+                <h3>ابحث عن طريق</h3>
+                <a href="#">التخصص</a><br>
+                <a href="#">المنطقة</a><br>
+                <a href="#">التامين</a><br>
+                <a href="#">المستشفى</a><br>
+                <a href="#">المركز</a>
+            </div>
+            <div class="footer-column">
+                <h3>هل انت طبيب؟</h3>
+                <a href="#">انضم الى اطباء فيزيتا</a><br>
+            </div>
+            <div class="footer-column">
+                <h3>تحتاج مساعدة؟</h3>
+                <a href="#">مكتبة طبية</a><br>
+                <a href="#">اتصل بنا</a><br>
+                <a href="#">شروط الاستخدام</a><br>
+                <a href="#">اتفاقية الخصوصية</a><br>
+                <a href="#">اتفاقية الخصوصية للاطباء</a>
+            </div>
+             <div class="footer-column">
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl=en&gl=US">            
+                    <img src="C:\Users\Fix-Dell\Downloads\google play.jpeg"></a>
+                <a href="https://apps.apple.com/eg/app/vezeeta-doctors-pharmacy/id1010281314">
+                    <img src="C:\Users\Fix-Dell\Downloads\App store.jpeg"></a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>                
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+            </div>
+         
+        
+  </footer>
+
+</body>
+</html>

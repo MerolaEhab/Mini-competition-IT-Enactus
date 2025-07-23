@@ -88,9 +88,9 @@
       margin: 30px 0;
     }
 
-    .squar {
-      width: 90px;
-      height: 90px;
+   .squar {
+      width: 150px;
+      height: 120px;
       border: 1px solid #000;
       border-radius: 30%;
       display: flex;
@@ -99,8 +99,15 @@
       text-align: center;
       font-weight: bold;
       font-size: 14px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
+    .squar:hover {
+      transform: translateY(-5px); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
     
      .booking-times {
       display: flex;
@@ -109,7 +116,7 @@
       margin-bottom: 10px;
     }
     .card {
-      background: white;
+      background:  #efeeeed8;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 10px 15px;
@@ -262,7 +269,7 @@
    <div class="container">
 
     <div class="doctor-section">
-       <img src="C:\Users\Fix-Dell\Pictures\Screenshot 2025-07-22 233721.jpg" alt="صورة الدكتور" />
+       <img src="https://cdn-dr-images.vezeeta.com/Assets/Images/SelfServiceDoctors/ENT8c6297d3fd7b257/Profile/150/merna-tarek-dentistry_20241216185520578.jpg" alt="صورة الدكتور" />
       <div class="doctor-details">
         <h2>دكتورة ميرنا طارق</h2>
         <p><strong>استشارية تجميل وتركيب الأسنان</strong></p>
@@ -305,8 +312,8 @@
         </p>
       </div>
      <div class="Squar-container">
-      <div class="squar">سعر الكشف:<br>250 جنيه</div>
-      <div class="squar">مدة الانتظار:<br>32 دقيقة</div>
+      <div class="squar">سعر الكشف:<br>💵 250 جنيه</div>
+      <div class="squar">مدة الانتظار:<br>🕒 32 دقيقة</div>
     </div>
   </div>
   
@@ -389,9 +396,9 @@
              <div class="footer-column">
             <div class="download-buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl=en&gl=US">            
-                    <img src="C:\Users\Fix-Dell\Downloads\google play.jpeg"></a>
+                    <img src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/jenkins-25/images/google-play-badge.png"></a>
                 <a href="https://apps.apple.com/eg/app/vezeeta-doctors-pharmacy/id1010281314">
-                    <img src="C:\Users\Fix-Dell\Downloads\App store.jpeg"></a>
+                    <img src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/jenkins-25/images/app-store-badge.png"></a>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
